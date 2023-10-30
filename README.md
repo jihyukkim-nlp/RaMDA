@@ -66,7 +66,7 @@ rm -r -v data/beir/$dataset/qgen/qgen-qrels
 **Step 1. Cache document embeddings**
 
 ```bash
-python -m utils.cache_embeddings.cache_embeddings \
+python -m tools.cache_embeddings \
 --model_name OpenMatch/cocodr-base-msmarco \
 --output_dir data/beir/$dataset/cache_embeddings/ \
 --corpus_path data/beir/$dataset/corpus.jsonl
